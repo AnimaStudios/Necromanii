@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>pphhyy_NecromaniiWeapons</defName>
+    <tab>pphhyy_areubis</tab>
+    <label>Necromanii Armaments</label>
+    <description>DESCRIPTION</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>pphhyy_NecromaniiHeavyWeapons</defName>
+    <tab>pphhyy_areubis</tab>
+    <label>Necromanii Heavy Armaments</label>
+    <description>DESCRIPTION</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>pphhyy_RomaWeapons</li>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>pphhyy_NecromaniiArmour</defName>
+    <tab>pphhyy_areubis</tab>
+    <label>Necromanii Armour</label>
+    <description>DESCRIPTION</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>pphhyy_RomaApparel</defName>
+    <tab>pphhyy_areubis</tab>
+    <label>Roman Clothes</label>
+    <description>DESCRIPTION</description>
+    <baseCost>250</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

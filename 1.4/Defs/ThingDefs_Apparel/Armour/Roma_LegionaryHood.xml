@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="HatMakeableBase" Name="pphhyy_Necromanii_NecroLegionary_Hood_Base" Abstract="True">
+        <uiIconScale>1.15</uiIconScale>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_RomaApparel</researchPrerequisite>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>0.1</Mass>
+            <EquipDelay>0.8</EquipDelay>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <costList>
+            <Cloth>30</Cloth>
+        </costList>
+        <equippedStatOffsets>
+            <SocialImpact>0.2</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="pphhyy_Necromanii_NecroLegionary_Hood_Base">
+        <defName>pphhyy_Necromanii_NecroLegionary_HoodI</defName>
+        <label>legionary hood</label>
+        <description>DESCRIPTION</description>
+        <graphicData>
+            <texPath>HeadGear/NecroLegionaryHoodI</texPath>
+        </graphicData>
+        <apparel>
+            <tags>
+                <li>pphhyy_Necromanii_NecroHoodI</li>
+            </tags>
+            <wornGraphicPath>HeadGear/NecroLegionaryHoodI</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+</Defs>
