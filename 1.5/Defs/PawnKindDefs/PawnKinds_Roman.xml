@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="pphhyy_Necromanii_Pawnkind_Base" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>pphhyy_Necromanii_Faction</defaultFactionType>
+    <maxGenerationAge>60</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+  </PawnKindDef>
+
+  <!-- Ranged -->
+
+  <PawnKindDef ParentName="pphhyy_Necromanii_Pawnkind_Base" Name="pphhyy_Necromanii_Archer_base">
+    <defName>pphhyy_Necromanii_NecroArcher</defName>
+    <label>archer</label>
+    <combatPower>45</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>360~600</apparelMoney>
+    <weaponMoney>80~80</weaponMoney>
+    <apparelTags>
+      <li>pphhyy_Necromanii_NecroLegionaryI</li>
+    </apparelTags>
+    <weaponTags>
+      <li>pphhyyNecroRanged</li>
+    </weaponTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>17~27</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- OneHanded -->
+  
+  <PawnKindDef ParentName="pphhyy_Necromanii_Pawnkind_Base" Name="pphhyy_Necromanii_NecroLegionaryI_base">
+    <defName>pphhyy_Necromanii_NecroLegionaryI</defName>
+    <label>legionary</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>360~600</apparelMoney>
+    <apparelTags>
+      <li>pphhyy_Necromanii_NecroLegionaryI</li>
+    </apparelTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>pphhyyNecroMelee</li>
+    </weaponTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~9</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="pphhyy_Necromanii_Pawnkind_Base" Name="pphhyy_Necromanii_NecroLegionaryII_base">
+    <defName>pphhyy_Necromanii_NecroLegionaryII</defName>
+    <label>legionary</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>360~600</apparelMoney>
+    <apparelTags>
+      <li>pphhyy_Necromanii_NecroLegionaryII</li>
+    </apparelTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>pphhyyNecroMelee</li>
+    </weaponTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~9</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="pphhyy_Necromanii_NecroLegionaryI_base">
+    <defName>pphhyy_Necromanii_Trader</defName>
+    <label>trader</label>
+    <trader>true</trader>
+    <apparelRequired Inherit="False">
+      <li>pphhyy_Roma_Tunic</li>
+    </apparelRequired>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Twohanded -->
+
+  <PawnKindDef ParentName="pphhyy_Necromanii_Pawnkind_Base">
+    <defName>pphhyy_Necromanii_NecroLegionaryIII</defName>
+    <label>legionary</label>
+    <combatPower>65</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>360~700</apparelMoney>
+    <weaponMoney>300~300</weaponMoney>
+    <apparelTags>
+      <li>pphhyy_Necromanii_NecroLegionaryIII</li>
+    </apparelTags>
+    <weaponTags>
+      <li>pphhyyNecroMeleeHeavy</li>
+    </weaponTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>13~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="pphhyy_Necromanii_Pawnkind_Base">
+    <defName>pphhyy_Necromanii_NecroCenturionI</defName>
+    <label>necro-centurion</label>
+    <combatPower>65</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>360~700</apparelMoney>
+    <weaponMoney>300~400</weaponMoney>
+    <apparelRequired>
+      <li>pphhyy_Necromanii_NecroLegionary_ArmourII</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>pphhyy_Necromanii_NecroCenturionI</li>
+    </apparelTags>
+    <weaponTags>
+      <li>pphhyyNecroMeleeHeavy</li>
+    </weaponTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>13~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="pphhyy_Necromanii_Pawnkind_Base">
+    <defName>pphhyy_Necromanii_NecroCenturionII</defName>
+    <label>necro-centurion</label>
+    <combatPower>65</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>360~700</apparelMoney>
+    <weaponMoney>300~400</weaponMoney>
+    <apparelRequired>
+      <li>pphhyy_Necromanii_NecroLegionary_ArmourIII</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>pphhyy_Necromanii_NecroCenturionII</li>
+    </apparelTags>
+    <weaponTags>
+      <li>pphhyyNecroMeleeHeavy</li>
+    </weaponTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>13~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Leader -->
+
+  <PawnKindDef ParentName="pphhyy_Necromanii_Pawnkind_Base">
+    <defName>pphhyy_Necromanii_Leader</defName>
+    <label>councilor</label>
+    <combatPower>85</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>999</maxGenerationAge>
+    <itemQuality>Normal</itemQuality>
+    <factionLeader>true</factionLeader>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>450~750</apparelMoney>
+    <apparelRequired>
+      <li>pphhyy_Roma_CapeI</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>pphhyy_Roma_Tunic</li>
+    </apparelTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponTags>
+      <li>pphhyyNecroMelee</li>
+    </weaponTags>
+    <weaponMoney>500~1000</weaponMoney>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>19~30</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>
